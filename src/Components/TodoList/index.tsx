@@ -105,7 +105,7 @@ class TodoList extends React.Component<Props, State> {
             })}
         </Card>
         {/* mouted & unmouted */}
-        {this.state.visibleDetail ? (
+        {this.state.visibleDetail && (
           <Modal
             visibleDetail={this.state.visibleDetail}
             dataProp={this.state.dataPropsDetail}
@@ -118,8 +118,6 @@ class TodoList extends React.Component<Props, State> {
               this.setState({ visibleDetail: false });
             }}
           />
-        ) : (
-          <></>
         )}
       </>
     );

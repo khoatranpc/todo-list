@@ -87,7 +87,7 @@ function App() {
         handleDropTodo={handleDropTodo}
         handleUpdateTodo={handleUpdateTodo}
       />
-      {visibelModalAdd ? (
+      {visibelModalAdd && (
         <Modal
           visibleDetail={visibelModalAdd}
           dataProp={emptyTodo}
@@ -100,8 +100,6 @@ function App() {
           }}
           statusModal={true}
         />
-      ) : (
-        <></>
       )}
     </div>
   );
