@@ -93,7 +93,7 @@ class TodoList extends React.Component<Props, State> {
               return (
                 <FormGroup
                   labelFor="text-input"
-                  key={index}
+                  key={item.title}
                   className="itemList"
                 >
                   <InputGroup readOnly={true} value={item.title} />
